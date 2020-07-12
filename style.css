@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family : sans-serif ;
+}
+.main-image-container{
+    width: 100%;
+}
+.vanilla-js-img{
+    width: 100%;
+    height: 350px;
+}
+.main-text-container{
+    width: 70%;
+    margin: auto ;
+   
+    padding: 2rem 0;
+}
+.vanilla-js-text{
+   
+   font-size: 5rem;
+   text-align: center;
+   text-transform: capitalize;
+   padding: 3rem 0;
+}
+.all-projects-text{
+   
+   font-size: 3rem;
+   text-align: center;
+   text-transform: capitalize;
+   padding: 3rem 0;
+} 
+.projects-grid{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+}
+.project-image{
+    width: 100%;
+}
+.grid-item{
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: -2px 6px 11px -4px rgba(0,0,0,0.68);
+    -moz-box-shadow: -2px 6px 11px -4px rgba(0,0,0,0.68);
+    box-shadow: -2px 6px 11px -4px rgba(0,0,0,0.68);
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.grid-item:hover{
+    transform: scale(1.02);
+    -webkit-box-shadow: -1px 7px 24px -5px rgba(0,0,0,0.68);
+-moz-box-shadow: -1px 7px 24px -5px rgba(0,0,0,0.68);
+box-shadow: -1px 7px 24px -5px rgba(0,0,0,0.68);
+}
+.link-container{
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+}
+.source-code-link{
+  background-color: #162447 ; 
+  color: #fff ;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  padding: 1rem;
+}
+.preview-link{
+    background-color: #1f4068 ; 
+    color: #fff ;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    padding: 1rem;
+}
+
+
+
+@media(max-width : 980px){
+    .projects-grid{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 3rem;
+    }
+    .vanilla-js-img{
+        width: 100%;
+        height: 250px;
+    }
+    .vanilla-js-text{
+        font-size: 3rem;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 3rem 0;
+     }
+     .all-projects-text{
+        
+        font-size: 2rem;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 3rem 0;
+     } 
+}
